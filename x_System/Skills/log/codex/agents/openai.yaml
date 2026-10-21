@@ -1,0 +1,8 @@
+interface:
+  display_name: "Log"
+  short_description: "Append a detailed activity entry to today's vault daily log when the owner types /log, $log, or asks to update the activity log."
+  default_prompt: "Append a detailed activity log entry for the current session to today's assistant daily log, using the vault's canonical log workflow."
+  brand_color: "#2F6FED"
+
+policy:
+  allow_implicit_invocation: true

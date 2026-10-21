@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Block a push if gitleaks finds anything in the working tree.
+set -euo pipefail
+if ! command -v gitleaks >/dev/null; then
+  echo "pre-push: gitleaks not installed; refusing to push" >&2
+  exit 1
+fi
+gitleaks detect --no-git --source . --redact --no-banner

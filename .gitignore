@@ -1,0 +1,7 @@
+.DS_Store
+.obsidian/workspace*.json
+x_System/Attachments/*
+!x_System/Attachments/.gitkeep
+*.env
+.env*
+__pycache__/
